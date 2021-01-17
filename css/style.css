@@ -201,3 +201,51 @@ Responsiveness
 
     
 }
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        padding: 1.1rem;
+    }
+
+    .header-container a {
+        position: relative;
+        left: 1rem;
+    }
+
+    .register-link a li {
+        text-decoration: none;
+        list-style-type: none;
+        color: #fff;
+        font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+        font-size: .95rem;
+        font-weight: 400;
+        position: relative;
+        right: 1rem;
+    }
+
+    .center-align {
+        text-align: center;
+        position: relative;
+        top: 2rem;
+    }
+
+    .card-panel {
+        width: 60%;
+        background-color: #fff;
+        position: relative;
+        top: .5rem;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        border-radius: .3rem;
+        box-shadow: 0.06rem 0.2rem .4rem rgba(0, 0, 0, 0.1), -0.08rem -0.1rem .4rem rgba(0, 0, 0, 0.1);
+    }
+
+    .forgot-link {
+        text-align: center;
+        position: relative;
+        top: 1.2rem;
+    }
+
+    
+}
+
