@@ -221,6 +221,10 @@ Responsiveness
         top: 1.2rem;
     }
 
+    .btn {
+        position: relative;
+        top: .4rem;
+    }
     
 }
 
