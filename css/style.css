@@ -98,6 +98,7 @@ body {
 
 .input-field {
     width: 100%;
+    margin-bottom: .5rem;
 }
 
 input[type=text], input[type=password] {
@@ -106,9 +107,16 @@ input[type=text], input[type=password] {
     border-bottom: .1rem solid #9e9e9e;
     width: 100%;
     outline: none;
-    height: 3rem;
+    height: 2.7rem;
     box-shadow: none;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
 }
+
+input[type=text]:focus, input[type=password]:focus {
+    border-bottom: .15rem solid #1A237E;
+} 
+
 
 .input-field > label {
     position: relative;
@@ -116,7 +124,21 @@ input[type=text], input[type=password] {
     font-size: 1rem;
     font-weight: 400;
     line-height: 20%;
+    cursor: text;
+    pointer-events: none;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
 }
+
+input[type=text]:focus ~ label,
+input[type=password]:focus ~ label,
+input[type=text]:valid ~ label,
+input[type=password]:valid ~ label {
+    top: -3.5rem;
+    color: #1A237E;
+    font-size: 0.8rem;
+}
+
 
 .btn {
     text-align: center;
